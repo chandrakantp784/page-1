@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Task Test</title>
+    <link rel="stylesheet" href="./assets/css/mdb.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/keyboard-shortcut.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="container-fluid border-bottom">
+        <nav class="navbar container navbar-expand-lg navbar-dark text-white">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link left" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link left" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link left" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mt-2 mt-lg-0  mr-0">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#login">Login</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-link left" data-toggle="modal" data-target="#register">Register</button>
+                    </li>
+            </div>
+        </nav>
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content p-3">
+                    <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active p-2" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Login</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link p-2" id="tab-register" data-mdb-toggle="pill" href="#pills-register" aria-controls="pills-register" aria-selected="false">Register</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="pills-login" role="tabpanel" varia-labelledby="tab-login">
+                            <form>
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="loginName" class="form-control" />
+                                    <label class="form-label" for="loginName">Email or username</label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="loginPassword" class="form-control" />
+                                    <label class="form-label" for="loginPassword">Password</label>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-md-6 d-flex justify-content-center">
+                                        <div class="form-check mb-3 mb-md-0">
+                                            <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                                            <label class="form-check-label" for="loginCheck"> Remember me </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-flex justify-content-center">
+                                        <a href="#!">Forgot password?</a>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+                                <div class="text-center">
+                                    <p>Not a member? <a href="#!">Register</a></p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                            <form>
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="registerName" class="form-control" />
+                                    <label class="form-label" for="registerName">Name</label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="registerUsername" class="form-control" />
+                                    <label class="form-label" for="registerUsername">Username</label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="registerEmail" class="form-control" />
+                                    <label class="form-label" for="registerEmail">Email</label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="registerPassword" class="form-control" />
+                                    <label class="form-label" for="registerPassword">Password</label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="registerRepeatPassword" class="form-control" />
+                                    <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                                </div>
+                                <div class="form-check d-flex  mb-4">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked aria-describedby="registerCheckHelpText" />
+                                    <label class="form-check-label" for="registerCheck">I have read and agree to the
+                                        terms</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <section class="banner container-fluid py-3">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6 text-white my-5 py-5">
+                    <h1>Lorem Ipsum Heading here</h1>
+                    <p> simply dummy text of the printing and typesetting industry. </p>
+                    <button type="button" class="btn btn-link px-3">know more</button>
+                </div>
+                <div class="col-lg-6">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="heding">Lorem Ipsum Heading here <span></span></h2>
+            <p class="pt-5 w-75 m-auto"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+    </section>
+    <section class=" about ">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <img src="./assets/images/possessed-photography-DqpPwAC3QVY-unsplash.jpg" class="img-fluid py-5" alt="">
+                </div>
+                <div class="col-md-6 py-3">
+                    <h2>Lorem Ipsum Heading here </h2>
+                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <button type="button" class="btn btn-link px-3">know more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="heding2 mb-4">Lorem Ipsum Heading here <span></span></h2>
+            <div class="row pt-3">
+                <div class="col-sm-6 col-md-3 py-3">
+                    <img src="./assets/images/michael-wilson-jld4MmOc4Uk-unsplash.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-sm-6 col-md-3 py-3">
+                    <img src="./assets/images/vivint-solar-9CalgkSRZb8-unsplash.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-sm-6 col-md-3 py-3">
+                    <img src="./assets/images/benjamin-jopen-p2GuLUu79Rg-unsplash.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-sm-6 col-md-3 py-3">
+                    <img src="./assets/images/vivint-solar-FK2F9p7cpUk-unsplash.jpg" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-img">
+        <div class="container-fluid">
+            <img src="./assets/images/manny-becerra-NgdhrwAx0J8-unsplash.jpg" class="img-fluid" alt="">
+        </div>
+    </section>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.js"></script>
+    <script src="./assets/js/jquery.slim.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
